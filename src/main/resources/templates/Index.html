@@ -6,16 +6,29 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/layout}">
-   <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
-    
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-         <div class="container-fluid" layout:fragment="page-content">             
-           </div>
-         <script th:src="@{/js/bootstrap.min.js}"></script>
+    <body style="background-image: url(https://w.wallhaven.cc/full/z8/wallhaven-z88yeg.png) ;
+  height: 80rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;">
+        
+        <div class="container-fluid" layout:fragment="page-content"> 
+            
+            <br>
+            <br>
+            <div class="">
+                <center><a class="btn btn-dark" th:href="@{/ped/all}" sec:authorize="hasRole('ROLE_USER')" role="button" style="width: 380px; font-size: 20px; border-radius: 20px; height: 230px; background-color: rgba(2,  2, 0, 0.6)"><br><b>HACER PEDIDO</b><br><br><i class="fa-solid fa-file-circle-plus" style="font-size: 90px"></i></a></center>                
+            </div>            
+        </div>
+        <script th:src="@{/js/bootstrap.min.js}"></script>
     </body>
 </html>

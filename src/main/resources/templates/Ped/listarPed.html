@@ -8,14 +8,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body style="background-color: gray">
         <div class="container" layout:fragment="page-content">    
             <div> <h1>PEDIDOS</h1> 
             </div>
             <hr>
-            <a th:href="@{/ped/form}" class="btn btn-info">Agregar pedido</a>
+            <a th:href="@{/ped/form}" class="btn btn-info">Agregar Pedido</a>
             <hr>
-            <table class="table">
+            <table class="table" style="border: solid 5px black; background-color: white">
                 <thead>
                     <tr>                        
                         <th scope="col">ID</th>
